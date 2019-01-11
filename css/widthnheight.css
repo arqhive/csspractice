@@ -1,0 +1,10 @@
+div {
+  /* width 및 height 값으로 px, cs, % 사용 가능 */
+  /* width 및 height는 margin, border, padding 안의 content 높이 / 너비를 설정 */
+  height: 200px;
+  width: 50%;
+  border: 2px solid green;
+
+  /* 요소의 최대 너비 지정 */
+  max-width: 500px;
+}
