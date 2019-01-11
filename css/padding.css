@@ -1,0 +1,21 @@
+p {
+  border: 2px solid green;
+
+  /* 개별 속성 */
+  padding-top: 50px;
+  padding-right: 30px;
+  padding-bottom: 50px;
+  padding-left: 80px;
+
+  /* 속기 속성 */
+  padding: 15px 23px 3px 4px;
+  /* margin과 전부 동일 */
+}
+
+div {
+  border: 2px solid green;
+  width: 300px;
+  padding: 25px;
+  /* 너비를 300px로 유지하기 위해 box-sizing을 사용한다 */
+  box-sizing: border-box;
+}
