@@ -1,0 +1,52 @@
+a {
+  color: pink;
+}
+
+/* 링크의 상태에 따라 스타일을 다르게 지정 */
+/* hover는 link와 visited 뒤에 와야 한다. */
+/* active는 hover 다음에 와야 한다. */
+/* 그냥 아래 순서처럼 써 */
+
+/* 방문하지 않은 링크 */
+a:link {
+  color: red;
+  text-decoration: none;
+  background-color: yellow;
+}
+
+/* 방문한 링크 */
+a:visited {
+  color: green;
+  text-decoration: none;
+  background-color: cyan;
+}
+
+/* 마우스 오버 링크 */
+a:hover {
+  color: hotpink;
+  text-decoration: underline;
+  background-color: lightgreen;
+}
+
+/* 클릭한 순간의 링크 */
+a:active {
+  color: blue;
+  text-decoration: underline;
+  background-color: hotpink;
+}
+
+/* 링크를 버튼처럼 보이게 하기 */
+#button:link, #button:visited {
+  background-color: #f44336;
+  color: white;
+  padding: 14px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border: 2px solid green;
+}
+
+#button:hover, #button:active {
+  background-color: red;
+  cursor: auto /* crosshair, default, e-resize, help, move, n-resize, ne-resize, nw-resize, pointer, progress, s-resize, se-resize, sw-resize, text, w-resize, wait */
+}
