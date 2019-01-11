@@ -1,0 +1,39 @@
+body {
+  /* 배경색 지정 */
+  background-color: lightblue;
+
+  /* 배경 이미지 지정 */
+  /* background-image 속성은 기본적으로 이미지를 가로 및 세로로 반복한다. */
+  background-image: url("../image/bg.jpg");
+
+  /* 수평으로 반복하기 */
+  background-repeat: repeat-x;
+
+  /* 수직으로 반복하기 */
+  background-repeat: repeat-y;
+
+  /* 반복 안함 */
+  background-repeat: no-repeat;
+
+  /* 이미지 위치 지정 */
+  background-position: right top;
+
+  /* 배경 이미지 고정 (스크롤시 함께 스크롤 하지 않음) */
+  background-attachment: fixed;
+
+  /* Shorthand property (속기 속성) */
+  /* color, image, repeat, attachment, position */
+  background: #ffffff url("../image/bg.jpg") no-repeat fixed right top;
+}
+
+h1 {
+  background-color: green;
+}
+
+div {
+  background-color: lightblue;
+}
+
+p {
+  background-color: yellow;
+}
