@@ -1,0 +1,32 @@
+p {
+  /* 테두리 스타일 */
+  border-style: dotted; /* dotted, dashed, solid, double, groove, ridge, inset, outset, none, hidden */
+
+  /* 위, 오른쪽 아래쪽, 왼쪽 순 지정 */
+  border-style: dotted dashed solid double;
+
+  /* 아래 속성들은 테두리 스타일이 정의 되어있지 않으면 효과 없음 */
+
+  /* 테두리 너비 */
+  border-width: 5px;
+  /* 위, 오른쪽 아래쪽, 왼쪽 순 지정 */
+  border-width: 5px 10px 3px 2px;
+
+  /* 테두리 색 */
+  border-color: red;
+  /* 위, 오른쪽 아래쪽, 왼쪽 순 지정 */
+  border-color: red green blue yellow;
+
+  /* 개별 지정 */
+  border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: dotted;
+  border-left-style: solid;
+
+  /* 속기 속성 */
+  /* width, style, color */
+  border: 5px solid red;
+
+  /* 둥근 테두리 (IE 8 이하 지원 안함) */
+  border-radius: 5px;
+}
