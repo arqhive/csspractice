@@ -1,0 +1,30 @@
+ul.a {
+  /* 타입 대신 이미지를 설정 할 수 있다. */
+  list-style-image: url('unknown.jpg');
+  /* 기본 설정 제거 */
+  /* 리스트에는 기본 여백이 있다. */
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+ul.b {
+  list-style-type: square;
+  /* 마커 위치 지정 */
+  list-style-position: outside; /* outside (default), inside */
+
+  /* 속기 설정 */
+  list-style: square inside url('unknown.jpg');
+
+  /* 색상 */
+  background: #ff9999;
+  padding: 20px;
+}
+
+ol.c {
+  list-style-type: upper-roman;
+}
+
+ol.d {
+  list-style-type: lower-alpha;
+}
