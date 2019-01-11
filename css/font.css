@@ -1,0 +1,46 @@
+/* CSS에는 두 가지 유형의 글꼴 패밀리가 있다.*/
+/*
+  Generic Famaily : 비슷한 모양을 가진 글꼴 (Serif, Monospace...)
+  Font Family : 특정 글꼴 모음 (Times New Roman, Arial)
+
+  Serif -> Times New Roman, Georgia
+  Sans-serif -> Arial, Verdana
+  Monospace -> Courier New, Lucida Console
+
+  sans-serif 가 serif 보다 컴퓨터에서 읽기 쉽다.
+*/
+
+body {
+  /* em 단위를 사용할 시 모든 브라우저에서 지원하게 하는 방법 */
+  font-size: 100%;
+}
+
+p {
+  font-family: "Times New Roman", Times, serif;
+
+  /* 폰트 스타일 */
+  /* oblique 텍스트가 기울어 지지만 브라우저 지원율 낮음 */
+  font-style: normal; /* normal (default), italic, oblique */
+
+  /* 폰트 사이즈 */
+  /* 단락을 표제처럼 보이게 하거나 머리글을 단락처럼 보이게 하려고 크기를 조절하지 말자 */
+  /* 글꼴 크기를 지정하지 않으면 기본 적으로 16px(=1em) 이다. */
+  font-size: 20px;
+
+  /* W3C는 em 단위를 권장 */
+  /* 구 IE 버전에는 문제가 약간 있다. */
+  font-size: 2.5em;
+
+  /* vw 뷰포트 너비에 따라 폰트의 사이즈가 달라짐 */
+  font-size: 10vw;
+
+  /* 폰트 두께 */
+  font-weight: bold; /* normal, bold .... */
+
+  /* 폰트 변형 */
+  /* 텍스트를 작은 대문자 폰트로 표현할지 여부 지정 */
+  font-variant: small-caps; /* normal, small-caps */
+
+  /* 속기 속성 */
+  font: italic bold 12px/30px Georgia, serif;
+}
