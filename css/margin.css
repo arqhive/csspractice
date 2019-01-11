@@ -1,0 +1,24 @@
+p {
+  /* 개별 속성 */
+  /* auto : 브라우저가 계산한다. */
+  /* px, pt, cm 가능 */
+  /* % 가능 */
+  /* inherit : 부모 요소에서 상속 받는다. */
+  margin-top: 100pt;
+  margin-right: 10%;
+  margin-bottom: 100px;
+  margin-left: inherit;
+
+  /* 속기 속성 */
+  /* 상단 우측 하단 좌측 */
+  margin: 10px 10px 10px 10px;
+
+  /* 상단, 우측 및 좌측, 하단 */
+  margin: 25px 50px 75px;
+
+  /* 상단 및 하단, 우측 및 좌측 */
+  margin: 25px 50px;
+
+  /* 모두 */
+  margin: 25px;
+}
