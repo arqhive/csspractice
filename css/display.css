@@ -1,0 +1,14 @@
+/* 각 요소에는 기본적으로 설정된 display 값이 있지만 변경이 가능하다. */
+
+li {
+  /* 메뉴가 수평으로 표시된다. */
+  display: inline;
+}
+
+.none {
+  display: none;
+}
+
+.hidden {
+  visibility: hidden;
+}
