@@ -1,0 +1,49 @@
+/* pseudo element는 요소의 지정된 부분을 스타일화 한다. */
+/* pseudo class와의 구분을 위해 클론을 2개 사용한다. */
+
+/* p요소의 첫번째 줄 */
+/* first-line은 블록 요소에만 적용 된다. */
+/*
+  폰트, 컬러, 백그라운드, word-spacing,
+  letter-spacing, text-decoration,
+  verticla-align, text-transform,
+  line-height, clear
+*/
+p::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}
+
+/* p요소의 첫 글자 */
+/*
+  폰트, 컬러, 백그라운드 마진, 패딩,
+  border, text-decoration, vertical-align(none, float),
+  text-transform, line-height, float, clear
+*/
+p::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+
+/* 요소 이전에 나타날 내용 */
+p::before {
+  content: url('../image/bg.jpg');
+}
+
+/* 요소 이후에 나타낼 내용 */
+/* 줄 바꿈이 안되네요 */
+p::after {
+  content: 'After';
+}
+
+/* 문자를 드래그 하거나 더블클릭해서 블록 처리 했을때 */
+::selection {
+  color: red;
+  background: yellow;
+}
+
+/* Fire-fox */
+::-moz-selection {
+  color: red;
+  background: yellow;
+}
