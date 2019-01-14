@@ -1,0 +1,41 @@
+ul.topnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* li 수평 정렬 */
+ul.topnav li {
+  float: left;
+}
+
+/* a를 block으로 변경하면 블록레벨 스타일을 줄 수 있다. (너비, 높이, 여백 등등) */
+ul.topnav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* a에 마우스가 올라갔을때 active 클래스가 아닌 것은 */
+ul.topnav li a:hover:not(.active) {
+  background-color: #111;
+}
+
+ul.topnav li a.active {
+  background-color: #4CAF50;
+}
+
+ul.topnav li.right {
+  float: right;
+}
+
+@media screen and (max-width: 600px) {
+  ul.topnav li.right,
+  ul.topnav li {
+    float: none;
+  }
+}
