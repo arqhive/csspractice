@@ -1,0 +1,41 @@
+div {
+  width: 100px;
+  height: 100px;
+  background: red;
+  /* 효과를 추가할 CSS속성, 지속시간 */
+  -webkit-transition: width 2s, height 4s, transform 2s; /* For Safari 3.1 to 6.0 */
+  transition: width 2s, height 4s, transform 2s;
+  transition-timing-function: ease;
+
+  /* 애니메이션 딜레이 */
+  -webkit-transition-delay: 1s; /* Safari */
+  transition-delay: 1s;
+}
+
+div:hover {
+  width: 300px;
+  height: 300px;
+  -webkit-transform: rotate(180deg); /* Safari */
+  transform: rotate(180deg);
+}
+
+/* transition-timing-function  효과의 속도 곡선 제어 */
+/*
+  ease (default) - 천천히 시작 후 빠르고 천천히 끝남
+  linear - 시작 부터 끝까지 동일함
+  ease-in - 느린 시작
+  ease-out - 느린 끝
+  ease-in-out - 느린 시작과 끝 (ease보다 좀 더 느림 체감상)
+  cubic-bezier(n, n, n, n) - 직접 설정
+*/
+
+/* 개별 속성 */
+/*
+  transition-property: width;
+  transition-duration: 2s;
+  transition-timing-function: linear;
+  transition-delay: 1s;
+*/
+
+/* 속기 속성 */
+/* transition: width 2s linear 1s */
