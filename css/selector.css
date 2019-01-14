@@ -1,0 +1,26 @@
+/* descendant selector (하위 선택자) */
+/* 해당 div 내의 모든 p 요소 변경 */
+/* 몇번 중첩 되어있던 간에 모든 p가 변경 된다. */
+div p {
+  background-color: yellow;
+}
+
+/* child selector (자식 선택자) */
+/* 해당 요소의 child (바로 밑 하위 요소)를 선택한다. */
+div > p {
+  background-color: yellow;
+}
+
+
+/* adjacent sibling selector (인접 형제 선택자) */
+/* 해당 요소를 뒤 따르는 '동생 요소'*/
+/* div가 형이고 p가 동생이다. */
+div + p {
+  background-color: yellow;
+}
+
+/* general sibling selector (일반 형제 선택자) */
+/* 모든 동생 요소 선택 */
+div ~ p {
+  background-color: yellow;
+}
