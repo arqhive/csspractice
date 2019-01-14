@@ -1,0 +1,75 @@
+.transform {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  /* transform() x축, y축으로 이동한다. */
+  -ms-transform: translate(50px, 100px);
+  /* IE-9 */
+  -webkit-transform: translate(50px, 100px);
+  /* Safari */
+  transform: translate(50px, 100);
+  /* 기본 문법 */
+}
+
+.rotate {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  /* 시계 방향으로 20도 회전한다. */
+  /* 음수 가능 */
+  -ms-transform: rotate(20deg);
+  /* IE 9 */
+  -webkit-transform: rotate(20deg);
+  /* Safari */
+  transform: rotate(20deg);
+}
+
+.scale {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  -ms-transform: scale(2, 3);
+  /* IE 9 */
+  -webkit-transform: scale(2, 3);
+  /* Safari */
+  transform: scale(2, 3);
+  /* transform: sacle(0.5, 0.5) 원래 크기의 절반 */
+}
+
+.skewX {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  -ms-transform: skewX(20deg);
+  /* IE 9 */
+  -webkit-transform: skewX(20deg);
+  /* Safari */
+  transform: skewX(20deg);
+}
+
+.skewY {
+  width: 300px;
+  height: 100px;
+  background-color: yellow;
+  border: 1px solid black;
+  -ms-transform: skewY(20deg);
+  /* IE 9 */
+  -webkit-transform: skewY(20deg);
+  /* Safari */
+  transform: skewY(20deg);
+}
+
+.skew {
+  /* X축, Y축 순으로 기울인다. */
+  -ms-transform: skew(20deg, 10deg);
+  /* IE 9 */
+  -webkit-transform: skew(20deg, 10deg);
+  /* Safari */
+  transform: skew(20deg, 10deg);
+}
+
+/* matrix (scaleX (), skewY (), skewX (), scaleY (), translateX (), translateY ()) */
