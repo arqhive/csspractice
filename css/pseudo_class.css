@@ -1,0 +1,36 @@
+/* pseudo_class란 요소의 특정 상태를 정의하는데 사용한다. */
+
+/* 간단한 툴팁 */
+.tooltip {
+  display: none;
+  background-color: yellow;
+  padding: 20px;
+}
+
+.tooltip_box:hover p {
+  display: block;
+}
+
+p:first-child {
+  color: red;
+}
+
+/* 모든 p 요소의 첫번째 i */
+p i:first-child {
+  color: blue;
+}
+
+/* 모든 첫번째 요소의 모든 하위 요소 */
+p:first-child i {
+  color: blue;
+}
+
+/* q요소의 따옴표 변경 */
+q:lang(no) {
+  quotes: "~" "~";
+}
+
+/* input에 focus될 시 */
+input:focus {
+  background-color: yellow;
+}
