@@ -1,0 +1,42 @@
+span.a {
+  display: inline;
+  width: 100px; /* 적용 안됨*/
+  height: 100px; /* 적용 안됨*/
+  padding: 5px;
+  border: 1px solid blue;
+  background-color: yellow;
+}
+
+/* inline-block은 줄바꿈을 하지 않고 width, height가 적용된다. */
+span.b {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;
+  background-color: yellow;
+}
+
+span.c {
+  display: block;
+  width: 100px;
+  height: 100px;
+  padding: 5px;
+  border: 1px solid blue;
+  background-color: yellow;
+}
+
+/* inline-block의 일반적인 용도중 하나 */
+.nav {
+  background-color: yellow;
+  list-style-type: none;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav li {
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px;
+}
