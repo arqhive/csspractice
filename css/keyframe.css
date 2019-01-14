@@ -1,0 +1,73 @@
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  /* 애니메이션 이름 일종의 변수라고 생각하면 편하다. */
+  animation-name: example;
+  /* 애니메이션 완료시간 */
+  animation-duration: 4s;
+}
+
+.percent {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  /* 애니메이션 이름 일종의 변수라고 생각하면 편하다. */
+  animation-name: percent;
+  /* 애니메이션 완료시간 */
+  animation-duration: 4s;
+  /* 음수를 사용하면 그만큼 시작하고 실행 */
+  animation-delay: 2s;
+  /* 애니메이션 반복 회수 (정수값) (infinite)*/
+  animation-iteration-count: 1;
+  /* 애니메이션 재생 방향 */
+  animation-direction: reverse;
+  /* transition과 동일 */
+  animation-timing-function: ease-in-out;
+  /* none (default) */
+  /* backwards 애니메이션 지연 기간동안 첫번째 프레임 가져옴 */
+  /* forwards 애니메이션이 완료될때 마지막 프레임 유지 */
+  /* both forwards, backwards 둘다 */
+  animation-fill-mode: backwards;
+}
+
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+/* Standard syntax */
+@keyframes example {
+  from {background-color: red;}
+  to {background-color: yellow;}
+}
+
+/* The animation code */
+@keyframes percent {
+  /* 완료시간의 도달 시간마다 */
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+/* div {
+  animation-name: example;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+} */
+/*
+div {
+  animation: example 5s linear 2s infinite alternate;
+} */
