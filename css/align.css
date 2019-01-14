@@ -1,0 +1,48 @@
+.center {
+  margin: auto;
+  /* width가 100%이거나 설정하지 않은 경우 효과가 없다. */
+  width: 50%;
+  border: 3px solid green;
+  padding: 10px;
+  /* 텍스트 가운데 정렬 */
+  text-align: center;
+}
+
+/* 이미지 가운데 정렬 */
+img {
+  /* 블록 요소로 만들어야 함! */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.center-y {
+  /* 상하 여백을 똑같은 값으로 주는 방법 */
+  padding: 70px 0;
+  /* 정중앙 배치 */
+  text-align: center;
+  border: 3px solid green;
+}
+
+/* height와 line-height를 동일한 값을 주기 */
+.center-y-2 {
+  line-height: 200px;
+  height: 200px;
+  border: 3px solid green;
+  text-align: center;
+}
+
+/* transform을 사용하는 방법 */
+.center-y-3 {
+  height: 200px;
+  position: relative;
+  border: 3px solid green;
+}
+
+.center-y-3 p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
