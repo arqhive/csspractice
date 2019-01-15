@@ -1,0 +1,68 @@
+/* float 이미지를 어떻게 띄워서 텍스트와 함께 배치할 것인가 */
+/* left : 요소가 컨테이너의 왼쪽으로 */
+/* right : 요소가 컨테니의 오른쪽으로 */
+/* none : 기본 값 */
+/* inherit : 상속 */
+
+/* 간단한 용도로 이미지 주위의 텍스트를 어떻게 배치 할 지 사용할 수 있다. */
+/* left와 right 사용시 display가 무시된다. */
+img {
+  float: right;
+  overflow: auto;
+}
+
+/* 이후 요소에 clear 속성이 있으면 페이지 흐름이 달라진다. */
+div {
+  clear: none; /* default 양쪽에 float 요소를 허용 한다. */
+  /* clear: left; /* 왼쪽에 float 요소를 허용하지 않는다. */ */
+  /* clear: right; /* 오른쪽에 float 요소를 허용하지 않는다. */ */
+  /* clear: both; /* 양옆에 float 요소를 허용하지 않는다. */ */
+}
+
+/* Grid Box */
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  width: 33.33%;
+  padding: 50px;
+  /* float box는 유연하게 상자의 크기를 지정할 수 없다. */
+  height: 300px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* float menu */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: red;
+}
