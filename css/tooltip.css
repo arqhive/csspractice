@@ -1,0 +1,58 @@
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+
+  position: absolute;
+  z-index: 1;
+
+  /* 오른쪽 툴팁 */
+  /* top: -5px;
+  left: 105%; */
+
+  /* 왼쪽 툴팁 */
+  /* top: -5px;
+  right: 105%; */
+
+  /* 위로 툴팁 */
+  bottom: 100%; /* top: 100:%; 밑으로 툴팁 */
+  left: 50%;
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* 툴팁 화살표 만드는법 !! */
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  /* 툴팁 방향에 따라 위치 속성도 값을 바꿔주면 된다. */
+  top: 100%; /* 화살표를 툴팁 하단에 */
+  left: 50%; /* 화살표를 중앙에 */
+  margin-left: -5px; /* 화살표 크기와 동일하게*/
+  border-width: 5px; /* 화살표 크기 */
+  border-style: solid;
+  border-color: black transparent transparent transparent; /* 위쪽 테두리는 검게 나머지는 투명하게 */
+}
+
+/* 페이드인 애니메이션 */
+.tooltip .tooltiptext {
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+  opacity: 1;
+}
