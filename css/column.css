@@ -1,0 +1,30 @@
+/* IE-9 버전 이하에서는 지원되지 않는다. */
+.newspaper {
+  /* 요소의 텍스트 내용을 3개의 열로 나눈다. */
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+
+  /* 열 간격 */
+  column-gap: 40px;
+
+  /* 열 사이 스타일 */
+  column-rule-style: solid;
+
+  /* 스타일 두께 */
+  column-rule-width: 1px;
+
+  /* 스타일 색상 */
+  column-rule-color: lightblue;
+
+  /* 속기 */
+  column-rule: 1px solid lightblue;
+
+  column-width:100px;
+}
+
+h2 {
+  /* 몇개의 열을 가로 지를지 */
+  /* all 로하면 모든 열에 걸쳐 있는다. */
+  column-span: all;
+}
