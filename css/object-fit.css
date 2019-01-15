@@ -1,0 +1,10 @@
+img {
+  width: 200px;
+  height: 400px;
+}
+
+.fill {object-fit: fill;} /* 요소의 내용 상자의 크기를 채울수 있는 크기 늘어나거나 찌그러짐 */
+.contain {object-fit: contain;} /* 가로 세로 비율을 유지하도록 크기가 조정된다. */
+.cover {object-fit: cover;} /* 종횡비를 유지하기 위한 크기 이미지가 잘릴 수 있다. */
+.scale-down {object-fit: scale-down;} /* 내용이 지정되지 않았거나 포함 된 것처럼 조정 */
+.none {object-fit: none;} /* 크기가 조정되지 않음 */
